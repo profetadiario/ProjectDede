@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>GT 50</title>
+    <link rel="icon" href="logo.png" type="image/gif">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<style>
+            * {box-sizing: border-box}
+            body {font-family: Verdana, sans-serif; margin:0}
+            .mySlides {display: none}
+            img {vertical-align: middle;}
+            
+            /* Slideshow container */
+            .slideshow-container {
+              max-width: 1000px;
+              position: relative;
+              margin: auto;
+            }
+            
+            /* Next & previous buttons */
+            .prev, .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              width: auto;
+              padding: 16px;
+              margin-top: -22px;
+              color: white;
+              font-weight: bold;
+              font-size: 18px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+            }
+            
+            /* Position the "next button" to the right */
+            .next {
+              right: 0;
+              border-radius: 3px 0 0 3px;
+            }
+            
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+              background-color: rgba(0,0,0,0.8);
+            }
+            
+            /* Caption text */
+            .text {
+              color: #f2f2f2;
+              font-size: 15px;
+              padding: 8px 12px;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+              text-align: center;
+            }
+            
+            /* Number text (1/3 etc) */
+            .numbertext {
+              color: #f2f2f2;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            }
+            
+            /* The dots/bullets/indicators */
+            .dot {
+              cursor: pointer;
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
+            
+            .active, .dot:hover {
+              background-color: #717171;
+            }
+            
+            /* Fading animation */
+            .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+            
+            @-webkit-keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+            
+            @keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+            
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .prev, .next,.text {font-size: 11px}
+            }
+</style>
+
+</head>
+<body>
+    
+    <script>
+        //window.alert("Bem Vindo a GT 50!");
+    </script>      
+    <div class="text-center">
+        <img src="logo.png" class="rounded" alt="logo">
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+        <ul class="navbar-nav text-white">
+            <li class="nav-link"><a class="text-white" href="SiteDede.html">Inicio</a></li>
+            <li class="nav-link"><a class="text-white" href="SiteDede1.html">Pilotos</a></li>
+            <li class="nav-link"><a class="text-white" href="SiteDede2.html">Lendas</a></li> 
+            <li class="nav-link"><a class="text-white" href="#">Carros</a></li>
+            <li class="nav-link"><a class="text-white" href="#">Melhores Momentos</a></li> 
+        </ul>
+    </nav>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="drivers1.jpg" style="width:100%">
+            <div class="text">Ayrton Senna, Alan Prost, Nigel Mansell, Nelson Piquet</div>
+        </div>                
+    <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="drivers3.jpg" style="width:100%">
+            <div class="text">David Coulthard, Michael Schumacher, Bernie Ecclestone, Mika Hakkinen, Rubens Bachiello</div>
+        </div>            
+    <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="drivers2.jpg" style="width:100%">
+            <div class="text">Lewis Hamilton, Fernando Alonso, Mark Webber, Jenson Button, Sebastian Vettel</div>
+        </div>            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>               
+</div>
+<script>
+        var slideIndex = 0;
+            showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2500); // Change image every 2 seconds
+}
+</script>
+    
+<footer class="page-footer font-small text-white bg-dark">
+    <div class="footer-copyright text-center py-3">© Copyright 2018                
+        </div>
+</footer>
+</body>
+</html>

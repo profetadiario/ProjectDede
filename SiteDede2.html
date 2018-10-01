@@ -1,0 +1,58 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GT 50 | Lendas</title>
+    <link rel="icon" href="logo.png" type="image/gif">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script>
+            function bigImg(x){
+                x.style.height = "500px";
+                x.style.width = "800px";
+            }
+            function normalImg(x){
+                x.style.height = "400px";
+                x.style.width = "700px";
+            }
+    </script>
+
+</head>
+<body>
+<div class="text-center">
+    <img src="logo.png" class="rounded" alt="logo">
+</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+    <ul class="navbar-nav text-white">
+        <li class="nav-link"><a class="text-white" href="SiteDede.html">Inicio</a></li>
+        <li class="nav-link"><a class="text-white" href="SiteDede1.html">Pilotos</a></li>
+        <li class="nav-link"><a class="text-white" href="SiteDede2.html">Lendas</a></li> 
+        <li class="nav-link"><a class="text-white" href="#">Carros</a></li>
+        <li class="nav-link"><a class="text-white" href="#">Melhores Momentos</a></li> 
+    </ul>
+</nav>    
+<div class="text-center ">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="rounded" src="Senna.jpg" alt="Senna" 
+    width="700px" height="400px">
+    <p>
+        "Ayrton Senna"
+    </p>
+</div>
+<div class="text-center">
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="rounded" src="Michael.jpg" alt="Michael"
+    width="700px" height="400px">
+    <p>
+        "Michael Schumacher"
+    </p>
+
+</div>
+<footer class="page-footer font-small text-white bg-dark">
+        <div class="footer-copyright text-center py-3">© Copyright 2018                
+        </div>
+</footer>    
+</body>
+</html>
