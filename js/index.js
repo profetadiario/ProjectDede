@@ -1,0 +1,3 @@
+function nada() {
+  return 'nada';
+}
